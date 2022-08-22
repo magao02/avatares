@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.img-wrapper{
+    width: 50%;
+    height: 50%;
+    position: relative;
+    
+    
+}
+.avatar-wrapper{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border: 3px solid white;
+    border-radius: 50%;
+   
+    
+   
+}
+.avatar-wrapper img{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+.x{
+    display: none;
+    
+}
+.apagar{
+    display: none;
+    
+}
+.button{
+    width: 100px;
+    height: 100px;
+}
+.button button{
+    width: 100px;
+    height: 100px;
+}
+
+
+.show{
+    display: block;
+}
+.fly{
+    animation: mymove 3s;
+
+}
+@keyframes mymove {
+    0% {
+        transform: translateY(100vh);
+
+    }
+    100% {
+        transform: translateY(-100vh);
+    }
+  }
+
+@media (max-width: 768px) {
+    @keyframes mymove {
+        0% {
+            transform: translateY(-100vh);
+    
+        }
+        100% {
+            transform: translateY(100vh);
+        }
+      }
+}
